@@ -1,12 +1,16 @@
+:root {
+    --padding: 10px
+}
+
 nav {
     background-color: darkblue;
-    padding: 10px;
+    padding: var(--padding);
 }
 
 nav a {
     color: white;
     display: block;
-    padding: 10px;
+    padding: var(--padding);
 }
 
 main {
