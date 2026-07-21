@@ -3,7 +3,7 @@ Challenge:
 Select the img tag and set the width 
 of the Google logo to be 300px.
 */
-.main{
+.main {
     margin-top: 100px;
     /* text-align: center; */
 }
@@ -30,12 +30,13 @@ of the Google logo to be 300px.
     margin-left: auto;
     margin-right: auto;
 }
-.btn-wrapper{
+
+.btn-wrapper {
     display: flex;
     justify-content: center;
 }
 
-.btn{
+.btn {
     /* display: block;
     margin-left: auto;
     margin-right: auto; */
@@ -52,5 +53,7 @@ of the Google logo to be 300px.
     font-size: 14px;
 }
 
-
-
+p {
+    display: flex;
+    justify-content: center;
+}

@@ -17,6 +17,10 @@ nav ul {
     align-items: center;
 }
 
+/* nav li {
+    flex: 1 1 100%;
+} */
+
 nav a {
     display: block;
     color: #fff;
