@@ -220,7 +220,8 @@ footer p {
 .socialmedia img {
     width: 40px;
     height: auto;
-    transition: transform 0.3s ease;
+    /* transition: transform 0.3s ease; */
+    text-decoration: none;
 }
 
 .socialmedia img:hover {
