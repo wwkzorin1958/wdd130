@@ -77,7 +77,7 @@ body {
     padding: 16px;
 }
 
-article {
+.hero article {
     position: absolute;
     top: 70%;
     left: 50%;
@@ -215,6 +215,7 @@ footer p {
     align-items: center;
     flex-shrink: 0;
     /* Prevents icons from shrinking */
+    text-decoration: none;
 }
 
 .socialmedia img {
