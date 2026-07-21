@@ -58,7 +58,8 @@ article {
     height: auto;
 }
 
-.hero h1 {
+.hero h1,
+article {
     position: absolute;
     top: 20px;
     width: 100%;
