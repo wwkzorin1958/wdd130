@@ -196,6 +196,7 @@ footer {
     padding: 20px;
     background-color: var(--primary-color);
     border-top: 2px solid var(--accent2-color);
+    text-decoration: none;
 }
 
 footer p {
