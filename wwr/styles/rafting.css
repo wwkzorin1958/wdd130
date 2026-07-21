@@ -66,6 +66,10 @@ article {
 .hero article {
     position: absolute;
     background-color: var(--accent2-color);
+    color: var(--primary-color);
+
+    width: 100%;
+    text-align: left;
 }
 
 .hero img {
@@ -97,5 +101,6 @@ article {
 
 .hero article img {
     float: right;
-    width: 125px
+    width: 125px;
+    background: var(--secondary-color)
 }
