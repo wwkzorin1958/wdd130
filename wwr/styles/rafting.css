@@ -52,12 +52,6 @@ article {
     position: relative;
 }
 
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
 .hero h1 {
     position: absolute;
     top: 20px;
@@ -72,6 +66,12 @@ article {
 .hero article {
     position: absolute;
     background: #6b5e3f;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 h2 {
