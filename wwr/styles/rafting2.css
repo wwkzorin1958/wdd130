@@ -56,7 +56,6 @@ body {
     margin: 0 auto;
 }
 
-/* Hero Section */
 .hero {
     position: relative;
 }
@@ -100,7 +99,6 @@ article {
     border-radius: 8px;
 }
 
-/* History Section */
 section {
     max-width: 840px;
     margin: 0 auto;
@@ -112,117 +110,17 @@ section h2 {
     font-family: var(--heading-font);
     color: var(--accent1-color);
     margin-bottom: 20px;
-    grid-column: 1 / -1;
-}
-
-section .content {
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    gap: 20px;
-    align-items: start;
-}
-
-section .left-text {
-    grid-column: 1;
-    text-align: justify;
-    line-height: 1.8;
-    margin: 0;
 }
 
 section img {
-    grid-column: 2;
+    float: left;
+    /* Or 'right' depending on which side you want */
     width: 200px;
-    height: auto;
+    margin: 0 20px 10px 0;
     border-radius: 8px;
 }
 
-section .right-text {
-    grid-column: 3;
+section p {
     text-align: justify;
     line-height: 1.8;
-    margin: 0;
-}
-
-/* Adventures Section */
-.adventures {
-    max-width: 840px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.adventures h2 {
-    text-align: center;
-    font-family: var(--heading-font);
-    color: var(--accent1-color);
-    margin-bottom: 20px;
-}
-
-/* CSS Grid Layout - 5 equal columns */
-.adventure-grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 15px;
-}
-
-.adventure-grid figure {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-.adventure-grid figure img {
-    width: 100%;
-    height: 150px;
-    /* Fixed height for consistency */
-    object-fit: cover;
-    /* Crops images to fit nicely */
-    border-radius: 8px;
-    display: block;
-}
-
-.adventure-grid figure figcaption {
-    margin-top: 8px;
-    font-family: var(--body-font);
-    font-size: 0.9rem;
-    font-weight: bold;
-    color: var(--accent1-color);
-}
-
-/* Footer Section */
-footer {
-    display: flex;
-    align-items: center;
-    max-width: 840px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: var(--primary-color);
-    border-top: 2px solid var(--accent2-color);
-}
-
-footer p {
-    font-family: var(--body-font);
-    color: var(--accent1-color);
-    margin: 0;
-    font-size: 1rem;
-    flex: 1;
-    text-align: center;
-    /* Centers the text */
-}
-
-.socialmedia {
-    display: flex;
-    gap: 15px;
-    align-items: center;
-    flex-shrink: 0;
-    /* Prevents icons from shrinking */
-}
-
-.socialmedia img {
-    width: 40px;
-    height: auto;
-    transition: transform 0.3s ease;
-}
-
-.socialmedia img:hover {
-    transform: scale(1.1);
 }

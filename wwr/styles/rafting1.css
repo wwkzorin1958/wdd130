@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #fafcfa;
+    --secondary-color: #f4a261;
+    --accent1-color: #051b23;
+    --accent2-color: #6b5e3f;
+    --heading-font: "Times New Roman", "Georgia", "serif";
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
+header {
+    /* display: grid;
+    background-color: var(--primary-color);
+    color: var(--accent2-color); */
+    margin: 1rem auto;
+    display: flex;
+    grid-template-columns: 150px 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    max-width: 1000px;
+}
+
+.logo img {
+    margin: 0 0.25rem 0 1rem;
+    margin-left: 100px;
+    width: 150px;
+    height: auto;
+}
+
+.navigation ul {
+    display: flex;
+    list-style: none;
+    /* Removes bullet points */
+    gap: 20px;
+    /* Adds spacing between items */
+    padding: 0;
+    margin: 0;
+
+}
+
+/* .nevigation li {
+    flex: 1 1 auto;
+}
+
+.navigation a {
+    display: block;
+    color: navy;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+} */
+
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+}
+
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--accent1-color);
+    color: #fff;
+}
+
+.hero article {
+    position: absolute;
+    background-color: var(--accent2-color);
+    color: var(--primary-color);
+
+    width: 97%;
+    text-align: left;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h2 {
+    display: Block;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background-color: black;
+    color: #fff
+}
+
+article {
+    position: absolute;
+    top: 295px;
+    width: 95%;
+    padding: 0px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--accent2-color);
+    color: #fff;
+
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+    background: var(--secondary-color);
+}
