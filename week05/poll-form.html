@@ -1,0 +1,70 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/poll-form.css">
+</head>
+
+<body>
+    <h1>WDD 130 | HTML Form - User Poll</h1>
+    <form>
+        <fieldset>
+            <legend>Contact Information</legend>
+            <div class="form-item">
+                <div class="form-item column2">
+                    <p>
+                        <label for="fullname">Full Name:</label>
+                        <input type="text" id="fullname" name="fullname" required>
+                    </p>
+                </div>
+            </div>
+            <div class="form-item column2">
+                <p>
+                    <label for="useremail">Email:</label>
+                    <input type="email" id="useremail" name="useremail" required>
+                </p>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Questions</legend>
+            <div class="form-item column1">
+                <p>
+                    <label for="browser">What is your favorite browser?</label>
+                    <select name="browser" id="browser">
+                        <option value="Chrome">Chrome</option>
+                        <option value="Safari">Safari</option>
+                        <option value="Edge">Edge</option>
+                        <option value="Brave">Brave</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </p>
+            </div>
+            <div class="form-item column1">
+                <p>
+                    <label for="pet">Do you have a household pet?</label>
+                    <input type="checkbox" id="pet" name="pet">
+                </p>
+            </div>
+
+            <p>
+                <label for="feedback">List the places you have lived:</label>
+                <textarea name="feedback" id="feedback" rows="4"
+                  placeholder="Stillwater Florida, Amsterdam Netherlands, Tibutu Mall"></textarea>
+            </p>
+        </fieldset>
+
+        <p>
+            <button type="submit">Submit Poll</button>
+        </p>
+
+    </form>
+    <footer>
+        <p>©️2026 | HTML Form = User Pull Activity | Ricky Wong</p>
+
+    </footer>
+
+</body>
+
+</html>
