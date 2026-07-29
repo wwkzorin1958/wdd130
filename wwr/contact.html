@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ricky Wong">
+    <meta name="description" content="Contact us for an exciting and memorable 
+        water rafting experience.">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/z-wwr-blue.jpg" alt="White water Rafting company logo">
+        </div>
+
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="company_info">
+            <h1>White Water Rafting Company</h1>
+            <h2>123 Main River Street</h2>
+            <h2>Kolob, California</h2>
+            <h2>+1 999 999 999</h2>
+            <h2>info@whitewater.com</h2>
+        </div>
+
+        <!-- Profile Section with Side-by-Side Boxes -->
+        <section class="profile">
+            <div class="profile-container">
+                <!-- Left Box: Google Map -->
+                <div class="profile-map">
+                    <h3>Find Us</h3>
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4383.955592683191!2d114.14538780813577!3d22.487203797596486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1szh-TW!2shk!4v1785314651769!5m2!1szh-TW!2shk"
+                      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                      referrerpolicy="strict-origin-when-cross-origin">
+                    </iframe>
+                </div>
+
+                <!-- Right Box: Contact Form -->
+                <div class="profile-form">
+                    <form action="#" method="post">
+                        <!-- User's Name -->
+                        <div class="form-row">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name"
+                              placeholder="Enter your full name" required>
+                        </div>
+
+                        <!-- User's Email -->
+                        <div class="form-row">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email"
+                              placeholder="Enter your email address" required>
+                        </div>
+
+                        <!-- Purpose of Message -->
+                        <div class="form-row purpose-row">
+                            <label class="purpose-label">
+                                <span>Message</span>
+                                <span>Purpose</span>
+                            </label>
+                            <div class="radio-group">
+                                <label>
+                                    <input type="radio" name="purpose" value="general" required>
+                                    General Inquiry
+                                </label>
+                                <label>
+                                    <input type="radio" name="purpose" value="reservation">
+                                    Reservation Question
+                                </label>
+                                <label>
+                                    <input type="radio" name="purpose" value="suggestion">
+                                    Website Suggestion
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Message - Label on top of textarea -->
+                        <div class="message-row">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4"
+                              placeholder="Type your message here..." required></textarea>
+                        </div>
+
+                        <!-- Newsletter Checkbox - Aligned left -->
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="newsletter" value="subscribe">
+                            Please subscribe me to the monthly newsletter
+                        </label>
+
+                        <!-- Submit Button - Full width -->
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="employee">
+            <h2>We Are Here to Serve You</h2>
+            <div class="employee-grid">
+                <figure>
+                    <img src="images/employee1.jpg" alt="Charlotte Carlson">
+                    <figcaption>Charlotte Carlson</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee4.jpg" alt="Alice Sellers">
+                    <figcaption>Alice Sellers</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee5.jpg" alt="Dave Hansen">
+                    <figcaption>Dave Hansen</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <footer>
+            <p>©️2026 🎉Joyous 😊Ricky Wong</p>
+            <nav class="socialmedia">
+                <a href="https://facebook.com">
+                    <img src="images/facebook.svg" alt="Facebook Icon" width="80">
+                </a>
+                <a href="https://instagram.com">
+                    <img src="images/instagram.svg" alt="Instagram Icon" width="80">
+                </a>
+                <a href="https://linkedin.com">
+                    <img src="images/linkedin.svg" alt="LinkedIn Icon" width="80">
+                </a>
+            </nav>
+        </footer>
+
+    </main>
+</body>
+
+</html>

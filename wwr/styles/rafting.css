@@ -56,6 +56,219 @@ body {
     margin: 0 auto;
 }
 
+.company_info {
+    text-align: center;
+}
+
+/* Profile Section - Side by Side Boxes */
+.profile {
+    max-width: 840px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.profile-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+/* Left Box - Map */
+.profile-map {
+    border: 2px solid var(--accent2-color);
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.profile-map h3 {
+    text-align: center;
+    font-family: var(--heading-font);
+    color: var(--accent1-color);
+    margin-bottom: 15px;
+}
+
+.profile-map iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+    border-radius: 8px;
+}
+
+/* Right Box - Form */
+.profile-form {
+    border: 2px solid var(--accent2-color);
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.profile-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Form row - label and input on same line */
+.profile-form .form-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-form .form-row label {
+    min-width: 100px;
+    font-weight: bold;
+    color: var(--accent1-color);
+    text-align: left;
+}
+
+/* Make name and email input fields longer */
+.profile-form .form-row input[type="text"],
+.profile-form .form-row input[type="email"] {
+    flex: 2;
+    min-width: 250px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: var(--body-font);
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.profile-form .form-row input[type="text"]:focus,
+.profile-form .form-row input[type="email"]:focus {
+    border-color: var(--secondary-color);
+    outline: none;
+    box-shadow: 0 0 5px rgba(244, 162, 97, 0.5);
+}
+
+/* Purpose row - label on left, radios on right */
+.profile-form .purpose-row {
+    align-items: flex-start;
+    padding-top: 5px;
+}
+
+/* Stacked label for Message Purpose */
+.profile-form .purpose-label {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 100px;
+    font-weight: bold;
+    color: var(--accent1-color);
+    padding-top: 3px;
+    line-height: 1.3;
+}
+
+.profile-form .purpose-label span {
+    display: block;
+}
+
+/* Radio buttons - stacked vertically on the right */
+.profile-form .radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 2;
+}
+
+.profile-form .radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: normal;
+    cursor: pointer;
+    min-width: 0;
+    text-align: left;
+}
+
+.profile-form .radio-group input[type="radio"] {
+    margin: 0;
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+}
+
+/* Message row - label on top of textarea */
+.profile-form .message-row {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.profile-form .message-row label {
+    font-weight: bold;
+    color: var(--accent1-color);
+}
+
+.profile-form .message-row textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: var(--body-font);
+    font-size: 1rem;
+    box-sizing: border-box;
+    resize: vertical;
+    min-height: 100px;
+    width: 100%;
+}
+
+.profile-form .message-row textarea:focus {
+    border-color: var(--secondary-color);
+    outline: none;
+    box-shadow: 0 0 5px rgba(244, 162, 97, 0.5);
+}
+
+/* Newsletter checkbox - aligned left */
+.profile-form .checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: normal;
+    cursor: pointer;
+    padding-left: 0;
+}
+
+.profile-form .checkbox-label input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+/* Submit Button - Full Width */
+.profile-form .submit-btn {
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+}
+
+.profile-form .submit-btn:hover {
+    background-color: #e07c2e;
+    transform: scale(1.01);
+}
+
+.profile-form .submit-btn:active {
+    transform: scale(0.98);
+}
+
+/* Responsive: Stack on smaller screens */
+@media screen and (max-width: 768px) {
+    .profile-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
 /* Hero Section */
 .hero {
     position: relative;
@@ -142,18 +355,64 @@ section .right-text {
     margin: 0;
 }
 
-/* Adventures Section */
-.adventures {
+/* Adventures, Employee Section */
+.adventures,
+.employee {
     max-width: 840px;
     margin: 0 auto;
     padding: 20px;
 }
 
-.adventures h2 {
+.employee {
+    border: 2px solid #333;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.adventures .employee h2 {
     text-align: center;
     font-family: var(--heading-font);
     color: var(--accent1-color);
     margin-bottom: 20px;
+}
+
+/* CSS Grid Layout - 3 equal columns */
+
+.employee-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.employee-grid {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.employee-grid img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+}
+
+.employee img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.employee-grid figcaption {
+    margin-top: 8px;
+    font-family: var(--body-font);
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: var(--accent1-color);
+    text-align: center;
 }
 
 /* CSS Grid Layout - 5 equal columns */
@@ -163,13 +422,13 @@ section .right-text {
     gap: 15px;
 }
 
-.adventure-grid figure {
+.adventure-grid {
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
-.adventure-grid figure img {
+.adventure-grid img {
     width: 100%;
     height: 150px;
     object-fit: cover;
@@ -177,7 +436,7 @@ section .right-text {
     display: block;
 }
 
-.adventure-grid figure figcaption {
+.adventure-grid figcaption {
     margin-top: 8px;
     font-family: var(--body-font);
     font-size: 0.9rem;
