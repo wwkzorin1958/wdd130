@@ -391,15 +391,11 @@ section .right-text {
     margin-bottom: 20px;
 }
 
-/* CSS Grid Layout - 3 equal columns */
-
+/* CSS Grid Layout - 3 equal columns for employees */
 .employee-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
-}
-
-.employee-grid {
     margin: 0;
     padding: 0;
     text-align: center;
@@ -413,12 +409,6 @@ section .right-text {
     display: block;
 }
 
-.employee img {
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-}
-
 .employee-grid figcaption {
     margin-top: 8px;
     font-family: var(--body-font);
@@ -428,14 +418,11 @@ section .right-text {
     text-align: center;
 }
 
-/* CSS Grid Layout - 5 equal columns */
+/* CSS Grid Layout - 5 equal columns for adventures */
 .adventure-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 15px;
-}
-
-.adventure-grid {
     margin: 0;
     padding: 0;
     text-align: center;
