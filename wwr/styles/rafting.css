@@ -248,8 +248,9 @@ body {
 
 /* Submit Button - Full Width */
 .profile-form .submit-btn {
-    background-color: var(--secondary-color);
-    color: #fff;
+    background-color: #c87a2a;
+    /* Darker orange for better contrast */
+    color: var(--white);
     padding: 14px 20px;
     border: none;
     border-radius: 5px;
@@ -262,7 +263,7 @@ body {
 }
 
 .profile-form .submit-btn:hover {
-    background-color: #e07c2e;
+    background-color: #a8621f;
     transform: scale(1.01);
 }
 
