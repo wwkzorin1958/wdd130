@@ -6,18 +6,13 @@
 }
 
 :root {
-    /* Primary Colors */
     --primary-color: #fafcfa;
     --secondary-color: #f4a261;
     --secondary-dark: #d4893e;
     --accent1-color: #051b23;
     --accent2-color: #6b5e3f;
-    
-    /* Fonts */
     --heading-font: "Times New Roman", "Georgia", "serif";
     --body-font: Arial, Helvetica, sans-serif;
-    
-    /* UI Colors */
     --white: #ffffff;
     --border-color: #333333;
     --bg-light: #f9f9f9;
@@ -34,7 +29,9 @@ body {
     margin: 0 auto;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: var(--heading-font);
     color: var(--accent1-color);
 }
@@ -288,6 +285,7 @@ header {
         grid-template-columns: 1fr;
         gap: 20px;
     }
+
     .profile-map iframe {
         min-height: 250px;
     }
