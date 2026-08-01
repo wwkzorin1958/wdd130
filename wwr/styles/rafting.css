@@ -1,5 +1,4 @@
-/* global setting  */
-
+/* ===== Global Settings ===== */
 * {
     margin: 0;
     padding: 0;
@@ -7,14 +6,47 @@
 }
 
 :root {
+    /* Primary Colors */
     --primary-color: #fafcfa;
     --secondary-color: #f4a261;
+    --secondary-dark: #d4893e;
     --accent1-color: #051b23;
     --accent2-color: #6b5e3f;
+    
+    /* Fonts */
     --heading-font: "Times New Roman", "Georgia", "serif";
     --body-font: Arial, Helvetica, sans-serif;
+    
+    /* UI Colors */
+    --white: #ffffff;
+    --black: #000000;
+    --border-color: #333333;
+    --bg-light: #f9f9f9;
+    --input-border: #cccccc;
+    --shadow-color: rgba(244, 162, 97, 0.5);
 }
 
+/* ===== Typography ===== */
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+    width: 100%;
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    font-family: var(--heading-font);
+    color: var(--accent1-color);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    grid-column: 1 / -1;
+}
+
+/* ===== Header ===== */
 header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -50,19 +82,12 @@ header {
     color: var(--secondary-color);
 }
 
-body {
-    font-family: var(--body-font);
-    color: var(--accent1-color);
-    width: 100%;
-    max-width: 840px;
-    margin: 0 auto;
-}
-
+/* ===== Company Info ===== */
 .company_info {
     text-align: center;
 }
 
-/* Profile Section - Side by Side Boxes */
+/* ===== Profile Section ===== */
 .profile {
     max-width: 840px;
     margin: 0 auto;
@@ -81,15 +106,13 @@ body {
     border: 2px solid var(--accent2-color);
     padding: 20px;
     border-radius: 8px;
-    background-color: #f9f9f9;
+    background-color: var(--bg-light);
     display: flex;
     flex-direction: column;
 }
 
 .profile-map h3 {
     text-align: center;
-    font-family: var(--heading-font);
-    color: var(--accent1-color);
     margin-bottom: 15px;
 }
 
@@ -106,7 +129,7 @@ body {
     border: 2px solid var(--accent2-color);
     padding: 20px;
     border-radius: 8px;
-    background-color: #f9f9f9;
+    background-color: var(--bg-light);
     display: flex;
     flex-direction: column;
 }
@@ -118,7 +141,7 @@ body {
     flex: 1;
 }
 
-/* Form row - label and input on same line */
+/* Form Rows */
 .profile-form .form-row {
     display: flex;
     align-items: center;
@@ -132,13 +155,12 @@ body {
     text-align: left;
 }
 
-/* Make name and email input fields longer */
 .profile-form .form-row input[type="text"],
 .profile-form .form-row input[type="email"] {
     flex: 2;
     min-width: 250px;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--input-border);
     border-radius: 5px;
     font-family: var(--body-font);
     font-size: 1rem;
@@ -146,19 +168,19 @@ body {
 }
 
 .profile-form .form-row input[type="text"]:focus,
-.profile-form .form-row input[type="email"]:focus {
+.profile-form .form-row input[type="email"]:focus,
+.profile-form .message-row textarea:focus {
     border-color: var(--secondary-color);
     outline: none;
-    box-shadow: 0 0 5px rgba(244, 162, 97, 0.5);
+    box-shadow: 0 0 5px var(--shadow-color);
 }
 
-/* Purpose row - label on left, radios on right */
+/* Purpose Row */
 .profile-form .purpose-row {
     align-items: flex-start;
     padding-top: 5px;
 }
 
-/* Stacked label for Message Purpose */
 .profile-form .purpose-label {
     display: flex;
     flex-direction: column;
@@ -174,7 +196,6 @@ body {
     display: block;
 }
 
-/* Radio buttons - stacked vertically on the right */
 .profile-form .radio-group {
     display: flex;
     flex-direction: column;
@@ -188,7 +209,6 @@ body {
     gap: 8px;
     font-weight: normal;
     cursor: pointer;
-    min-width: 0;
     text-align: left;
 }
 
@@ -200,7 +220,7 @@ body {
     flex-shrink: 0;
 }
 
-/* Message row - label on top of textarea */
+/* Message Row */
 .profile-form .message-row {
     display: flex;
     flex-direction: column;
@@ -214,7 +234,7 @@ body {
 
 .profile-form .message-row textarea {
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--input-border);
     border-radius: 5px;
     font-family: var(--body-font);
     font-size: 1rem;
@@ -224,20 +244,13 @@ body {
     width: 100%;
 }
 
-.profile-form .message-row textarea:focus {
-    border-color: var(--secondary-color);
-    outline: none;
-    box-shadow: 0 0 5px rgba(244, 162, 97, 0.5);
-}
-
-/* Newsletter checkbox - aligned left */
+/* Newsletter Checkbox */
 .profile-form .checkbox-label {
     display: flex;
     align-items: center;
     gap: 10px;
     font-weight: normal;
     cursor: pointer;
-    padding-left: 0;
 }
 
 .profile-form .checkbox-label input[type="checkbox"] {
@@ -246,10 +259,9 @@ body {
     cursor: pointer;
 }
 
-/* Submit Button - Full Width */
+/* Submit Button */
 .profile-form .submit-btn {
-    background-color: #c87a2a;
-    /* Darker orange for better contrast */
+    background-color: var(--secondary-dark);
     color: var(--white);
     padding: 14px 20px;
     border: none;
@@ -263,7 +275,7 @@ body {
 }
 
 .profile-form .submit-btn:hover {
-    background-color: #a8621f;
+    background-color: #b8732a;
     transform: scale(1.01);
 }
 
@@ -271,19 +283,18 @@ body {
     transform: scale(0.98);
 }
 
-/* Responsive: Stack on smaller screens */
+/* ===== Responsive ===== */
 @media screen and (max-width: 768px) {
     .profile-container {
         grid-template-columns: 1fr;
         gap: 20px;
     }
-
     .profile-map iframe {
         min-height: 250px;
     }
 }
 
-/* Hero Section */
+/* ===== Hero Section ===== */
 .hero {
     position: relative;
 }
@@ -300,7 +311,7 @@ body {
     width: 100%;
     text-align: center;
     background-color: rgba(5, 27, 35, 0.7);
-    color: #fff;
+    color: var(--white);
     padding: 16px;
 }
 
@@ -312,7 +323,7 @@ body {
     width: 80%;
     max-width: 800px;
     background-color: rgba(107, 94, 63, 0.85);
-    color: #fff;
+    color: var(--white);
     padding: 20px;
     text-align: center;
     opacity: 0.8;
@@ -322,23 +333,14 @@ body {
     float: right;
     width: 125px;
     margin-left: 20px;
-    margin-right: 0;
     border-radius: 8px;
 }
 
-/* History Section */
+/* ===== History Section ===== */
 section {
     max-width: 840px;
     margin: 0 auto;
     padding: 20px;
-}
-
-section h2 {
-    text-align: center;
-    font-family: var(--heading-font);
-    color: var(--accent1-color);
-    margin-bottom: 20px;
-    grid-column: 1 / -1;
 }
 
 section .content {
@@ -348,8 +350,8 @@ section .content {
     align-items: start;
 }
 
-section .left-text {
-    grid-column: 1;
+section .left-text,
+section .right-text {
     text-align: justify;
     line-height: 1.8;
     margin: 0;
@@ -362,43 +364,26 @@ section img {
     border-radius: 8px;
 }
 
-section .right-text {
-    grid-column: 3;
-    text-align: justify;
-    line-height: 1.8;
-    margin: 0;
-}
-
-/* Adventures, Employee Section */
-.adventures,
+/* ===== Employee Section ===== */
 .employee {
     max-width: 840px;
     margin: 0 auto;
     padding: 20px;
-}
-
-.employee {
-    border: 2px solid #333;
-    padding: 20px;
-    margin: 20px 0;
+    border: 2px solid var(--border-color);
     border-radius: 8px;
-    background-color: #f9f9f9;
+    background-color: var(--bg-light);
 }
 
-.adventures .employee h2 {
+.employee h2 {
     text-align: center;
-    font-family: var(--heading-font);
-    color: var(--accent1-color);
     margin-bottom: 20px;
 }
 
-/* CSS Grid Layout - 3 equal columns for employees */
+/* Employee Grid - 3 columns */
 .employee-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
-    margin: 0;
-    padding: 0;
     text-align: center;
 }
 
@@ -412,20 +397,28 @@ section .right-text {
 
 .employee-grid figcaption {
     margin-top: 8px;
-    font-family: var(--body-font);
-    font-size: 0.9rem;
     font-weight: bold;
     color: var(--accent1-color);
     text-align: center;
 }
 
-/* CSS Grid Layout - 5 equal columns for adventures */
+/* ===== Adventures Section ===== */
+.adventures {
+    max-width: 840px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.adventures h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Adventure Grid - 5 columns */
 .adventure-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 15px;
-    margin: 0;
-    padding: 0;
     text-align: center;
 }
 
@@ -439,13 +432,11 @@ section .right-text {
 
 .adventure-grid figcaption {
     margin-top: 8px;
-    font-family: var(--body-font);
-    font-size: 0.9rem;
     font-weight: bold;
     color: var(--accent1-color);
 }
 
-/* Footer Section */
+/* ===== Footer ===== */
 footer {
     display: flex;
     align-items: center;
@@ -454,11 +445,9 @@ footer {
     padding: 20px;
     background-color: var(--primary-color);
     border-top: 2px solid var(--accent2-color);
-    text-decoration: none;
 }
 
 footer p {
-    font-family: var(--body-font);
     color: var(--accent1-color);
     margin: 0;
     font-size: 1rem;
