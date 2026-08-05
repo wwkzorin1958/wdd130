@@ -4,107 +4,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Ricky Wong">
-    <meta name="description" content="We organize rafting trips, provide gear & guides, 
-        and ensure a thrilling yet safe river experience.">
     <title>About Us</title>
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
+
+    <!-- ===== HEADER ===== -->
     <header>
         <div class="logo">
-            <img src="images/z-wwr-blue.jpg" alt="White water Rafting company logo">
+            <img src="images/z-wwr-blue.jpg" alt="Logo">
         </div>
-
-        <nav class="navigation">
+        <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="trips.html">Trips</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <div class="hero">
-            <img src="images/rafting12-1024-compressed.jpg" alt="whitewater rafting is fun">
-            <h1>Joyous Whitewater Rafting</h1>
-            <article>
-                <img src="images/rafting59-600.jpg" alt="Happy company staff">
-                <p>Our goal is to provide you with the best experience possible.
-                    We have been providing unforgettable experiences for over 30 years.
-                    We are a family owned and operated business that is dedicated to
-                    providing you with the best experience possible. We have a team
-                    of experienced guides that are dedicated to providing you with the
-                    best experience possible.
-                </p>
-            </article>
+
+    <!-- ===== HERO ===== -->
+    <div class="hero">
+        <img src="images/rafting12-1024-compressed.jpg" alt="Rafting">
+        <h1>Joyous Whitewater Rafting</h1>
+        <a href="trips.html" class="cta">Book Now</a>
+    </div>
+
+    <!-- ===== HISTORY ===== -->
+    <section>
+        <h2>History</h2>
+        <div class="history">
+            <p>Rapids! started floating the river in 1995. We have been providing unforgettable experiences for over 30 years. We are a family owned and operated business.</p>
+            <img src="images/rafting-staff.jpg" alt="Staff">
+            <p>Our guides are trained in safety and first aid, ensuring your adventure is both thrilling and secure. We have a team of experienced guides dedicated to providing you with the best experience possible.</p>
         </div>
+    </section>
 
-        <section>
-            <h2>History</h2>
-            <div class="content">
-                <p class="left-text">Rapids! started floating the river in 1995. We have been
-                    providing
-                    unforgettable experiences for over 30 years. We are a family owned and operated
-                    business
-                    that is dedicated to providing you with the best experience possible.</p>
+    <!-- ===== ADVENTURES ===== -->
+    <section>
+        <h2>Adventure Awaits!</h2>
+        <div class="grid-5">
+            <figure>
+                <img src="images/rafting1.jpg" alt="Trip 1">
+                <figcaption>Los Dientes</figcaption>
+            </figure>
+            <figure>
+                <img src="images/rafting2.jpg" alt="Trip 2">
+                <figcaption>Del Diablo</figcaption>
+            </figure>
+            <figure>
+                <img src="images/rafting3.jpg" alt="Trip 3">
+                <figcaption>Big Mallard</figcaption>
+            </figure>
+            <figure>
+                <img src="images/rafting4.jpg" alt="Trip 4">
+                <figcaption>Half Day</figcaption>
+            </figure>
+            <figure>
+                <img src="images/rafting5.jpg" alt="Trip 5">
+                <figcaption>Cat in Wash</figcaption>
+            </figure>
+        </div>
+    </section>
 
-                <img src="images/rafting-staff.jpg" alt="Rafting Staff">
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <p>©️2026 🎉Joyous 😊Ricky Wong</p>
+        <div class="social">
+            <a href="#"><img src="images/facebook.svg" alt="FB"></a>
+            <a href="#"><img src="images/instagram.svg" alt="IG"></a>
+            <a href="#"><img src="images/linkedin.svg" alt="LI"></a>
+        </div>
+    </footer>
 
-                <p class="right-text">We have a team of experienced guides that are dedicated in
-                    providing
-                    you with the best experience possible. We have a team of experienced guides to
-                    providing
-                    you with the best experience possible. Our guides are trained in safety and
-                    first aid,
-                    ensuring your adventure is both thrilling and secure.</p>
-            </div>
-        </section>
-
-        <section class="adventures">
-            <h2>Adventure Awaits You!</h2>
-            <div class="adventure-grid">
-                <figure>
-                    <img src="images/rafting1.jpg" alt="Los Dientes del Diablo">
-                    <figcaption>Los Dientes del Diablo</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/rafting2.jpg" alt="Del Diablo">
-                    <figcaption>Del Diablo</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/rafting3.jpg" alt="Big Mallard">
-                    <figcaption>Big Mallard</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/rafting4.jpg" alt="Half Day Adventure">
-                    <figcaption>Half Day Adventure</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/rafting5.jpg" alt="Cat in the Washing">
-                    <figcaption>Cat in the Washing</figcaption>
-                </figure>
-            </div>
-        </section>
-
-        <footer>
-            <p>©️2026 🎉Joyous 😊Ricky Wong</p>
-            <nav class="socialmedia">
-                <a href="https://facebook.com">
-                    <img src="images/facebook.svg" alt="Facebook Icon" width="80">
-                </a>
-                <a href="https://instagram.com">
-                    <img src="images/instagram.svg" alt="Instagram Icon" width="80">
-                </a>
-                <a href="https://linkedin.com">
-                    <img src="images/linkedin.svg" alt="LinkedIn Icon" width="80">
-                </a>
-            </nav>
-        </footer>
-
-    </main>
 </body>
 
 </html>
